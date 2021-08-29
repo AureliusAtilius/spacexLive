@@ -1,12 +1,12 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options 
+import requests,bs4
 
 
-chrome_options = Options()  
-chrome_options.add_argument("--headless") 
-browser = webdriver.Chrome(chrome_options=chrome_options)
 
 url = "https://www.youtube.com/user/spacexchannel/live"
+def headLength(url):
 
+        #create scrape to get head length
+        req=requests.get(url)
+        ytChannel=bs4.BeautifulSoup(req.text)
+        return len(ytChannel.head)
 
-browser.get(url)
