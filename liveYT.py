@@ -1,4 +1,4 @@
-
+import webbrowser
 
 def isLive(notLive, reqLen):
         
@@ -6,4 +6,6 @@ def isLive(notLive, reqLen):
 
                 
 
-
+def openStream(url):
+                webbrowser.open(url)
+        
