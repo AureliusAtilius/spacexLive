@@ -6,6 +6,5 @@ def isLive(notLive, reqLen):
 
                 
 
-def openStream(url):
-                webbrowser.open(url)
+
         
