@@ -6,7 +6,9 @@ def main():
 
         baseLength=35
         #url="https://www.youtube.com/user/spacexchannel/live"
-        url ="https://www.youtube.com/c/NASASpaceflightVideos/live"
+        url="https://www.youtube.com/channel/UCI-smkLgcbxb0ghgHttN6og/live"
+        #url ="https://www.youtube.com/c/NASASpaceflightVideos/live"
+        
         
         while True:
                 # Check if channel is live by checking header length
@@ -23,8 +25,8 @@ def main():
                         if hour>=8 and hour<=21:
                                 # Open livestream
                                 webbrowser.open(url)
-                        # Wait an hour before checking again.
-                        time.sleep(3600)
+                        # Wait an two hours before checking again.
+                        time.sleep(7200)
                         continue
 
 if __name__=="__main__":
